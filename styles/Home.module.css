@@ -1,0 +1,150 @@
+.headimage {
+  border: 1px solid #0070f3;
+  border-radius: 50%;
+}
+.me {
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+.container {
+  width: 100%;
+  min-width: 580px;
+  align-self: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 7rem;
+  border-radius: 15px;
+}
+.intro {
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 50, 0.2);
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  background: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: 3px 6px 15px 6px rgba(0, 0, 0, 0);
+}
+.intro p {
+  width: 100%;
+  font-size: 1.2rem;
+  color: black;
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.line1 {
+  animation: darkwhite 8s linear infinite;
+}
+.profession {
+  animation: chameleon 30s linear infinite;
+}
+.profession:hover {
+  color: white;
+}
+.name {
+  font-size: 3rem;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  word-wrap: break-word;
+  word-break: keep-all;
+  animation: chameleon 30s linear infinite;
+}
+.name:hover {
+  color: teal;
+}
+@keyframes darkwhite {
+  0% {
+    color: black;
+  }
+  100% {
+    color: rgba(165, 165, 165, 1);
+  }
+}
+@keyframes chameleon {
+  12% {
+    color: rgba(0, 255, 165, 1);
+  }
+  24% {
+    color: cyan;
+  }
+  36% {
+    color: blue;
+  }
+  48% {
+    color: blueviolet;
+  }
+  60% {
+    color: red;
+  }
+}
+.photo {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 3px 6px 15px 6px rgba(0, 255, 165, 0);
+}
+.image:hover {
+  filter: none;
+}
+.triangle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  animation: chameleon 12s linear infinite;
+}
+.triangletext {
+  width: 300px;
+  height: 300px;
+  font-size: 1.3rem;
+  font-family: 'Courier New', Courier, monospace;
+  animation: chameleon 12s linear infinite;
+}
+.triangletext:hover {
+  color: orange;
+}
+.triangletextLink {
+  animation: chameleon 12s linear infinite;
+  text-decoration: none;
+}
+.triangletextLink:hover {
+  color: cyan;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .section1 {
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .name {
+    color: black;
+  }
+}

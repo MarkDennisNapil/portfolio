@@ -1,0 +1,169 @@
+.container {
+  min-width: 600px;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.section1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+.links {
+    max-width: 250px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 15px 0 0 15px;
+    backdrop-filter: blur(5px);
+}
+.links h1 {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    animation: chameleon 10s linear infinite;
+}
+.linktext {
+    color: black;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+}
+.icon:hover {
+    transform: scale(1.2);
+}
+.email {
+    min-width: 250px;
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0 15px 15px 0;
+    backdrop-filter: blur(5px);
+}
+.email h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    animation: chameleon 10s linear infinite;
+}
+.email span {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.email input[type=email], .email input[type=text] {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+}
+.email textarea {
+    width: 100%;
+    height: 400px;
+    font-size: 1.2rem;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+.email input[type=file], .email label {
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.email input[type=file]{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+.email Button {
+    font-size: 35px;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email Button:hover {
+    background: rgba(0, 0, 50, 1);
+    border: 1px solid rgba(0, 255, 165, 1);
+    border-radius: 50%;
+}
+.sendicon {
+    width: 25px;
+    height: 25px;
+}
+.textfield:focus, .tfemail:focus, .tftext:focus {
+    outline: 3px solid rgba(0, 255, 165, 1);
+    border: 0;
+}
+@keyframes chameleon {
+    12% {
+      color: rgba(0, 255, 165, 1);
+    }
+    24% {
+      color: cyan;
+    }
+    36% {
+      color: blue;
+    }
+    48% {
+      color: blueviolet;
+    }
+    60% {
+      color: red;
+    }
+  }
+@media (max-width: 600px) {
+.section1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.links, .email {
+    width: 100%;
+    max-width: 600px;
+    margin: 5px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.email input[type=email], .email textarea {
+    font-size: 1.7rem;
+}
+}

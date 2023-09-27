@@ -1,0 +1,112 @@
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    gap: 5px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.icons {
+    width: 20px;
+    height: 20px;
+}
+.contacts {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    border-radius: 15px;
+}
+.mystuff {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    border-radius: 15px;
+}
+.contacts h3 {
+    width: 100%;
+    font-size: 18px;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    animation: chameleon 12s linear infinite;
+}
+.link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+}
+.link:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: 0.4s ease-in-out;
+}
+@keyframes chameleon {
+    12% {
+      color: rgba(0, 255, 265, 1);
+    }
+    24% {
+      color: cyan;
+    }
+    36% {
+      color: blue;
+    }
+    48% {
+      color: blueviolet;
+    }
+    60% {
+      color: red;
+    }
+  }
+.footerspace {
+  width: 100%;
+}
+.footerspace Button {
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  background: transparent;
+  border: 0;
+  margin-top: 80px;
+  border-radius: 50px;
+  transform: rotateY(180deg);
+  animation: walk 12s linear infinite;
+}
+.footerspace Button:hover {
+  background: yellow;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+@keyframes walk {
+  0% {
+    width: 100%;
+  }
+  89% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    width: 8%;
+    visibility: hidden;
+    opacity: 0.15;
+  }
+}

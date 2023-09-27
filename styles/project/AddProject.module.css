@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.form {
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 60px;
+    padding: 8px;
+    border-radius: 15px;
+    text-align: left;
+    background: #eaeaea;
+}
+.form h1 {
+    width: 100%;
+    font-size: 2rem;
+    border-bottom: 1px solid whitesmoke;
+}
+.form label {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.form input[type=file] {
+    width: 100%;
+    border: 1px solid blue;
+    padding: 5px;
+}
+.form input[type=text], .form input[type=link], .form input[type=file] {
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+.savebtn {
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    margin-top: 5px;
+    background: rgba(0, 255, 165, 1);
+}

@@ -1,0 +1,114 @@
+.space {
+    width: 100%;
+    min-height: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: 1px;
+    overflow: hidden;
+}
+.container {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+    margin-top: 20px;
+}
+.sun {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    background: linear-gradient(135deg, cyan, blue, blueviolet);
+    border-radius: 50%;
+    box-shadow: 0 0 3em rgba(0, 0, 165, 1);
+    animation: spinner 8s linear infinite;
+}
+.earth, .moon {
+    position: absolute;
+    border: 1px solid transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.earth {
+    top: 5em;
+    left: 5em;
+    width: 40em;
+    height: 40em;
+    animation: orbit 20s linear infinite;
+}
+.moon {
+    top: 0;
+    right: 0;
+    width: 12em;
+    height: 12em;
+    animation: orbit 2.7s linear infinite;
+}
+.earth button {
+    font-size: 35px;
+    background: transparent;
+    border: 0;
+    animation: orbit 30s linear infinite;
+}
+.moon2 {
+    top: 0;
+    right: 0;
+    width: 50em;
+    height: 50em;
+    animation: orbit 8s linear infinite;
+}
+.moon2 h1 {
+    font-size: 60px;
+    animation: orbit 60s linear infinite;
+}
+.earth::before, .moon::before, .moon2::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+.earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 5em;
+    height: 5em;
+    background: linear-gradient(135deg, rgba(255, 165, 0, 1), rgba(255, 0, 0, 1));
+}
+.moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 2em;
+    height: 2em;
+    background: rgba(0, 255, 165, 1);
+}
+.moon2::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 5em;
+    height: 5em;
+    background: linear-gradient(135deg, rgba(255, 255, 0, 1), rgba(0, 255, 0, 1), teal);
+}
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinner {
+    0% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        right: 0;
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 600px) {
+    .space {
+        width: 600px;
+    }
+}
