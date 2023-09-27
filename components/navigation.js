@@ -26,10 +26,10 @@ const Navigation = (props) => {
     }, [])
     return(
         <div className={styles.navigation}>
-            <a href="/"><Button style={{background: `${home}`}} onClick={() => setHome(props.color)}>Home</Button></a>
-            <a href="/project"><Button style={{background: `${project}`}} onClick={() => setProject(props.color)}>Projects</Button></a>
-            <a href="/contact"><Button style={{background: `${contact}`}} onClick={() => setContact(props.color)}>Contacts</Button></a>
-            <a href="/about"><Button style={{background: `${about}`}} onClick={() => setAbout(props.color)}>About Me</Button></a>
+            <a href="/portfolio"><Button style={{background: `${home}`}} onClick={() => setHome(props.color)}>Home</Button></a>
+            <a href="/portfolio/project"><Button style={{background: `${project}`}} onClick={() => setProject(props.color)}>Projects</Button></a>
+            <a href="/portfolio/contact"><Button style={{background: `${contact}`}} onClick={() => setContact(props.color)}>Contacts</Button></a>
+            <a href="/portfolio/about"><Button style={{background: `${about}`}} onClick={() => setAbout(props.color)}>About Me</Button></a>
         </div>
     )
 }
