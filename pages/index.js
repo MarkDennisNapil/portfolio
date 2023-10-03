@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundImage: `url("../assets/background/scattered-forcefields.svg")`}}>
       <Planets />
       <SolarSystem />
       <Head className={styles.head}>
