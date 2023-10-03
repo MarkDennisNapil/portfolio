@@ -28,7 +28,7 @@ function About() {
             </div>
             </div>
             <div className={styles.school}>
-                <p>I completed a <mark className={styles.course}>Bachelor of Science in Information Technology</mark> degree in <Link href="/wiki" className={styles.schoollink}><mark>Surigao Del Norte State University</mark></Link>, formerly called Surigao State College of Technology.</p>
+                <p>I completed a <mark className={styles.course}>Bachelor of Science in Information Technology</mark> degree in <Link href="https://en.wikipedia.org/wiki/Surigao_del_Norte_State_University" className={styles.schoollink}><mark>Surigao Del Norte State University</mark></Link>, formerly called Surigao State College of Technology.</p>
             </div>
         </section>
         <section className={styles.skillsSection}>
@@ -44,7 +44,7 @@ function About() {
                     I build full stack web application using MERN stack. And currently expanding my knowledge on software engineering field.
                     I'm adaptable and can work with teams or independently. 
                     After I graduated from college, I started freelancing as a software developer for college student's Capstone Projects. 
-                    Then I created my own media content sharing application called <Link href="http://parallelium.com" className={styles.paralleliumRef}><mark>Parallelium</mark></Link>.
+                    Then I created my own media content sharing application called <Link href="https://parallelium.vercel.app/" className={styles.paralleliumRef}><mark>Parallelium</mark></Link>.
                 </p>
                 </div>
             </div>
