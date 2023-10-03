@@ -7,10 +7,11 @@ import Planets from '../components/planets'
 import styles from '../styles/Home.module.css'
 import myphoto from '../public/me.png'
 import Link from 'next/link'
+import backgroundImg from '../assets/background/scattered-forcefields.svg'
 
 export default function Home() {
   return (
-    <div className={styles.container} styles={backgroundImage: `url("../assets/background/scattered-forcefields.svg")`}>
+    <div className={styles.container} styles={backgroundImage: `url(${backgroundImg})`}>
       <Planets />
       <SolarSystem />
       <Head className={styles.head}>
