@@ -39,7 +39,7 @@ function About() {
                 <div className={styles.description}>
                 <h3>About Me</h3>
                 <p>
-                    I'm Mark Dennis Iligan Napil, a tech enthusiast who loves programming and spends most of my time coding. 
+                    I'm Mark Dennis Napil, a tech enthusiast who loves programming and spends most of my time coding. 
                     And also loves art, and doing art work is my stress therapy if I got burned out in coding. 
                     I build full stack web application using MERN stack. And currently expanding my knowledge on software engineering field.
                     I'm adaptable and can work with teams or independently. 
