@@ -30,6 +30,12 @@ const Email = () => {
         axios.post(`${API}send/email`, formdata,{})
         .then(response => {
             setStatus(response.data.message)
+            setTimeout(() => {
+                setSender("")
+                setSubject("")
+                setMessage("")
+                setStatus("")
+            }, 3000)
         })
         .catch(error => {
             setStatus('Send failed! Please check your internet connection or Retry.')
@@ -40,7 +46,6 @@ const Email = () => {
         <div className={styles.email}>
             <h1>Email Me at dennis7napil@gmail.com</h1>
             <span>or down here</span>
-            <span>{status}</span>
             <input type="email" className={styles.tfemail} value={sender} onChange={handleEmailChange} placeholder="@Your email..." required/>
             <input type="text" className={styles.tftext} value={subject} onChange={handleSubjectChange} placeholder="Subject" required />
             <textarea className={styles.textfield} value={message} onChange={handleMessageChange} placeholder="Type message..." required/>
