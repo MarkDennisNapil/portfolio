@@ -35,7 +35,7 @@ const Email = () => {
                 setSubject("")
                 setMessage("")
                 setStatus("")
-            }, 3000)
+            }, 6000)
         })
         .catch(error => {
             setStatus('Send failed! Please check your internet connection or Retry.')
