@@ -110,7 +110,8 @@
     border-radius: 12px;
 }
 .email Button {
-    font-size: 35px;
+    font-size: 25px;
+    color: rgba(0, 255, 165, 1);
     padding: 8px;
     border: 1px solid transparent;
     border-radius: 15px;
