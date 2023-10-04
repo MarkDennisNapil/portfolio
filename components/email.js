@@ -1,6 +1,7 @@
 import React,{ useState } from "react"
 import { Button } from "react-bootstrap"
 import axios from "axios"
+import API from '../config/api'
 import styles from '../styles/Contacts.module.css'
 
 const Email = () => {
@@ -26,7 +27,7 @@ const Email = () => {
         formdata.append('receiver', 'dennis7napil@gmail.com')
         formdata.append('subject', subject)
         formdata.append('message', message)
-        axios.post(`http://localhost:5000/send/email`, formdata,{})
+        axios.post(`${API}send/email`, formdata,{})
         .then(response => {
             setStatus(response.data.message)
         })
