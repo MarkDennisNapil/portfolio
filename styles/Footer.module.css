@@ -9,6 +9,7 @@
     border-radius: 15px;
     box-sizing: border-box;
     overflow: hidden;
+    background-image: url("../assets/background/wave-haikei.svg");
 }
 .icons {
     width: 20px;
