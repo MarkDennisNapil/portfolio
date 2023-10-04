@@ -6,10 +6,9 @@
     align-items: center;
     padding: 8px;
     gap: 5px;
-    border-radius: 0px;
+    border-radius: 15px;
     box-sizing: border-box;
     overflow: hidden;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 .icons {
     width: 20px;
