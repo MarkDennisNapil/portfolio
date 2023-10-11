@@ -99,6 +99,7 @@
     gap: 3rem;
     background-image: url("../assets/background/wave-haikei.svg");
     object-fit: fill;
+    background-repeat: no-repeat;
     /*background: linear-gradient(135deg, rgba(0, 0, 100, 1), rgba(0, 0, 80, 1), rgba(0, 0, 50, 1));*/
     border-radius: 15px;
 }
