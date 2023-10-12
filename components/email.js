@@ -44,7 +44,7 @@ const Email = () => {
     }
     return(
         <div className={styles.email}>
-            <h1>Email Me at dennis7napil@gmail.com</h1>
+            <h1>Email me at dennis7napil@gmail.com</h1>
             <span>or down here</span>
             <input type="email" className={styles.tfemail} value={sender} onChange={handleEmailChange} placeholder="@Your email..." required/>
             <input type="text" className={styles.tftext} value={subject} onChange={handleSubjectChange} placeholder="Subject" required />
