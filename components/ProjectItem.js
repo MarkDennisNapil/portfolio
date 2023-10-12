@@ -65,7 +65,7 @@ const ProjectItem = (props) => {
         }
     }
     const DeleteProject = () => {
-        axios.delete(`${API}${_id}`)
+        axios.delete(`${API}project/${_id}`)
         .then(response => {
             alert(response.data.message);
         })
