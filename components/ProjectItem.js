@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "react-bootstrap"
 import axios from "axios"
+import API from '../api'
 import previous from '../assets/svgs/solid/angle-left.svg'
 import next from '../assets/svgs/solid/angle-right.svg'
 import trash from '../assets/svgs/solid/trash-can.svg'
@@ -64,7 +65,7 @@ const ProjectItem = (props) => {
         }
     }
     const DeleteProject = () => {
-        axios.delete(`http://localhost:5000/project/${_id}`)
+        axios.delete(`${API}${_id}`)
         .then(response => {
             alert(response.data.message);
         })
@@ -74,7 +75,7 @@ const ProjectItem = (props) => {
     }
     return(
         <div className={styles.item}>
-            <img src={'http://localhost:5000/resources/' + images[imageindex]} className={styles.projectimage} alt={`${name}`}/>
+            <img src={`${API}resources/` + images[imageindex]} className={styles.projectimage} alt={`${name}`}/>
             <Button onClick={Decrement} className={styles.prev}><Image src={previous} className={styles.controlicon} alt={`${name}`}/></Button>
             <Button onClick={Increment} className={styles.next}><Image src={next} className={styles.controlicon} alt={`${name}`} /></Button>
             <Button onClick={DeleteProject} className={toggledelete}><Image src={trash} className={styles.trashcanimage} alt={`${name}`} /></Button>
