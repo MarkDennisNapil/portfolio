@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { Button } from "react-bootstrap"
 import Head from "next/head";
 import axios from "axios";
+import API from '../../api'
 import Navigation from "../../components/navigation";
 import styles from '../../styles/project/AddProject.module.css'
 
@@ -37,7 +38,7 @@ function AddProject(){
         for(let i = 0; i < files.length; i++){
             formdata.append('file', files[i]);
         }
-        axios.post(`https://markdennisnapil-server.onrender.com/project`, formdata, {})
+        axios.post(`${API}project`, formdata, {})
         .then(response => {
             setStatus(response.data.message)
             console.log(response.data.message);
