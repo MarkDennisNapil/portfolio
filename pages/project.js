@@ -20,7 +20,7 @@ const Projects = () => {
     useEffect(() => {
         axios.get(`${API}/project`)
         .then(response => {
-            setProjects(response.data)
+            setProjects(response.data.reverse())
         })
         .catch(error => {
             console.log(error);
