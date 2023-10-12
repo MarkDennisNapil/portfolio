@@ -75,7 +75,7 @@ const ProjectItem = (props) => {
     }
     return(
         <div className={styles.item}>
-            <img src={`${API}resources/` + images[imageindex]} className={styles.projectimage} alt={`${name}`}/>
+            <img src={`${API}resources/${images[imageindex]}`} className={styles.projectimage} alt={`${name}`}/>
             <Button onClick={Decrement} className={styles.prev}><Image src={previous} className={styles.controlicon} alt={`${name}`}/></Button>
             <Button onClick={Increment} className={styles.next}><Image src={next} className={styles.controlicon} alt={`${name}`} /></Button>
             <Button onClick={DeleteProject} className={toggledelete}><Image src={trash} className={styles.trashcanimage} alt={`${name}`} /></Button>
