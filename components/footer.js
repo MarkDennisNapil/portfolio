@@ -25,7 +25,7 @@ const Footer = () => {
             <Link href="/" className={styles.link}><Image src={phone} className={styles.icons} alt={name} />+639567306046</Link>
             <Link href="https://web.facebook.com/markdennis.napil" className={styles.link}><Image src={fb} className={styles.icons} alt={name}/>Facebook</Link>
             <Link href="https://www.instagram.com/markdennis_1/" className={styles.link}><Image src={instagram} className={styles.icons} alt={name} />Instagram</Link>
-            <Link href="https://twitter.com/MarkDen43990737" className={styles.link}><Image src={twitter} className={styles.icons} alt={name}/>TwitterX</Link>
+            <Link href="https://twitter.com/MarkDen43990737" className={styles.link}><Image src={twitter} className={styles.icons} alt={name}/>X</Link>
             </div>
             <div className={styles.mystuff}>
             <Link href="https://github.com/MarkDennisNapil" className={styles.link}><Image src={github} className={styles.icons} alt={name}/>Github</Link>
