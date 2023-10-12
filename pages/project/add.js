@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { Button } from "react-bootstrap"
 import Head from "next/head";
 import axios from "axios";
-import API from '../../config/api'
+import API from "../../config/api";
 import Navigation from "../../components/navigation";
 import styles from '../../styles/project/AddProject.module.css'
 

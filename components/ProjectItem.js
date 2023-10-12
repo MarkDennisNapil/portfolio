@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "react-bootstrap"
 import axios from "axios"
-import API from '../config/api'
+import API from "../config/api"
 import previous from '../assets/svgs/solid/angle-left.svg'
 import next from '../assets/svgs/solid/angle-right.svg'
 import trash from '../assets/svgs/solid/trash-can.svg'
