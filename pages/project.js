@@ -18,7 +18,7 @@ const Projects = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        axios.get(`${API}/project`)
+        axios.get(`${API}project`)
         .then(response => {
             setProjects(response.data.reverse())
         })
