@@ -37,7 +37,7 @@ function AddProject(){
         for(let i = 0; i < files.length; i++){
             formdata.append('file', files[i]);
         }
-        axios.post(`http://localhost:5000/project`, formdata, {})
+        axios.post(`https://markdennisnapil-server.onrender.com/project`, formdata, {})
         .then(response => {
             setStatus(response.data.message)
             console.log(response.data.message);
