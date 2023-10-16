@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { Button } from 'react-bootstrap'
 import Navigation from '../components/navigation'
 import Footer from '../components/footer'
 import SolarSystem from '../components/solarsystem'
@@ -22,7 +23,7 @@ export default function Home() {
         <div className={styles.intro}>
           <p className={styles.line1}>Hi, my name is</p>
           <h1 className={styles.name}>Mark Dennis Napil</h1>
-          <p className={styles.profession}>I'm a Software Engineer.</p>
+          <p className={styles.profession}>I'm a Software Developer.</p>
         </div>
         <div className={styles.photo}>
           <Image src={myphoto} className={styles.image} alt="Mark Dennis Napil" />
@@ -30,8 +31,9 @@ export default function Home() {
         <div className={styles.triangle}>
           <div className={styles.triangletext}>
             I am specialised in full stack web development using
-            React and Nodejs, and familiar with <Link href='/about' className={styles.triangletextLink}>other programming languages and tools</Link>.
+            React and Node.js, and familiar with <Link href='/about' className={styles.triangletextLink}>other programming languages and tools</Link>.
           </div>
+          <Button className={styles.memore}>More about me</Button>
         </div>
       </main>
     <Footer />  

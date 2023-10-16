@@ -24,7 +24,7 @@ function About() {
                 <Image src={me} className={styles.image} alt="Mark Dennis Napil"/>
                 <p>My name is</p>
                 <h1>Mark Dennis Napil</h1>
-                <p>I'm a Software Engineer.</p>
+                <p>I'm a Software Developer.</p>
             </div>
             </div>
             <div className={styles.school}>

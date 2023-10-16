@@ -138,6 +138,16 @@
   color: cyan;
   text-decoration: underline;
 }
+.memore {
+  font-size: 18px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0);
+}
+.memore:hover {
+  background: orange;
+}
 @media (max-width: 600px) {
   .section1 {
     gap: 1rem;
