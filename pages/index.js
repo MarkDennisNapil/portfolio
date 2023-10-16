@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import React, { useRouter } from 'next/router'
 import { Button } from 'react-bootstrap'
 import Navigation from '../components/navigation'
 import Footer from '../components/footer'
@@ -10,6 +11,10 @@ import myphoto from '../public/me.png'
 import Link from 'next/link'
 
 export default function Home() {
+  const router = useRouter();
+  const AboutRedir = () => {
+    router.push('/about');
+  }
   return (
     <div className={styles.container}>
       <Planets />
@@ -33,8 +38,8 @@ export default function Home() {
             I am specialised in full stack web development using
             React and Node.js, and familiar with <Link href='/about' className={styles.triangletextLink}>other programming languages and tools</Link>.
           </div>
-          <Button className={styles.memore}>More about me</Button>
         </div>
+        <Button className={styles.memore} onClick={AboutRedir}>More about me</Button>
       </main>
     <Footer />  
     </div>
