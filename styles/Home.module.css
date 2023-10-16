@@ -116,6 +116,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding: 2rem;
   box-sizing: border-box;
   animation: chameleon 12s linear infinite;
