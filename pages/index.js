@@ -40,7 +40,6 @@ export default function Home() {
           </div>
         </div>
         <Button className={styles.memore} onClick={AboutRedir}>More about me</Button>
-              <img src="https://drive.google.com/file/d/1F8nO7odsHSUO4eInCG2fDISk4Kn8AoL0/view?usp=share_link" />
       </main>
     <Footer />  
     </div>
