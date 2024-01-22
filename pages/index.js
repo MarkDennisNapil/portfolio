@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className={styles.triangle}>
           <div className={styles.triangletext}>
-            I am specialised in full stack web development using
+            I specialised in full stack web development using
             React and Node.js, and familiar with <Link href='/about' className={styles.triangletextLink}>other programming languages and tools</Link>.
           </div>
         </div>
