@@ -28,7 +28,7 @@ function About() {
             </div>
             </div>
             <div className={styles.school}>
-                <p>I completed a <mark className={styles.course}>Bachelor of Science in Information Technology</mark> degree in <Link href="https://en.wikipedia.org/wiki/Surigao_del_Norte_State_University" className={styles.schoollink}><mark>Surigao Del Norte State University</mark></Link>, formerly called Surigao State College of Technology.</p>
+                <p>I completed a <mark className={styles.course}>Bachelor of Science in Information Technology</mark> degree in <Link href="https://en.wikipedia.org/wiki/Surigao_del_Norte_State_University" className={styles.schoollink}><mark>Surigao State College of Technology</mark></Link>.</p>
             </div>
         </section>
         <section className={styles.skillsSection}>
