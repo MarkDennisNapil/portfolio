@@ -51,8 +51,7 @@ const Projects = () => {
             <Navigation active={"project"} color={`rgba(0, 255, 165, 1)`} />
             <main className={styles.main}>
             <div className={styles.topbar}>
-                <h1>Projects</h1>
-                <br></br>{loading ? <h2>Loading... please wait :)</h2> : ""}
+                {loading ? <h2>Loading... please wait :)</h2> : <h1>Projects</h1>}
                 <Button onClick={AddProject} className={styles.addbtn}><Image src={plus} className={styles.addbtnimage}/><span className={addbtntext}>Add Project</span></Button>
             </div>
             <div className={styles.projects}>
