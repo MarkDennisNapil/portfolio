@@ -16,11 +16,13 @@ const Projects = () => {
     const addtext = styles.btntext;
     const [addbtntext, setaddbtntext] = useState(addtext);
     const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         axios.get(`${API}project`)
         .then(response => {
             setProjects(response.data.reverse())
+            setLoading(false)
         })
         .catch(error => {
             console.log(error);
@@ -50,6 +52,7 @@ const Projects = () => {
             <main className={styles.main}>
             <div className={styles.topbar}>
                 <h1>Projects</h1>
+                {loading ? <h2>Loading... please wait :)</h2> : ""}
                 <Button onClick={AddProject} className={styles.addbtn}><Image src={plus} className={styles.addbtnimage}/><span className={addbtntext}>Add Project</span></Button>
             </div>
             <div className={styles.projects}>
