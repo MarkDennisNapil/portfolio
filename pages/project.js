@@ -52,7 +52,7 @@ const Projects = () => {
             <main className={styles.main}>
             <div className={styles.topbar}>
                 <h1>Projects</h1>
-                {loading ? <h2>Loading... please wait :)</h2> : ""}
+                <br></br>{loading ? <h2>Loading... please wait :)</h2> : ""}
                 <Button onClick={AddProject} className={styles.addbtn}><Image src={plus} className={styles.addbtnimage}/><span className={addbtntext}>Add Project</span></Button>
             </div>
             <div className={styles.projects}>
