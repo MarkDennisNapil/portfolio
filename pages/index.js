@@ -28,7 +28,7 @@ export default function Home() {
         <div className={styles.intro}>
           <p className={styles.line1}>Hi, my name is</p>
           <h1 className={styles.name}>Mark Dennis Napil</h1>
-          <p className={styles.profession}>I'm a Software Developer.</p>
+          <p className={styles.profession}>I'm a Software Developer & Graphic Designer.</p>
         </div>
         <div className={styles.photo}>
           <Image src={myphoto} className={styles.image} alt="Mark Dennis Napil" />
