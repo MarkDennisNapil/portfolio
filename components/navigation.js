@@ -1,4 +1,3 @@
-
 import React, {useState, useEffect} from "react"
 import { Button } from "react-bootstrap"
 import styles from '../styles/Navigation.module.css'
@@ -11,8 +10,11 @@ const Navigation = (props) => {
     useEffect(() => {
         if(props.active === 'home'){
             setHome(props.color)
-        } 
+        }
         else if(props.active === 'project'){
+            setProject(props.color)
+        }
+        else if (props.active === 'art') {
             setProject(props.color)
         }
         else if(props.active === 'contact'){
@@ -26,12 +28,14 @@ const Navigation = (props) => {
     }, [])
     return(
         <div className={styles.navigation}>
-            <a href="/"><Button style={{background: `${home}`}} onClick={() => setHome(props.color)}>Home</Button></a>
-            <a href="/project"><Button style={{background: `${project}`}} onClick={() => setProject(props.color)}>Projects</Button></a>
-            <a href="/contact"><Button style={{background: `${contact}`}} onClick={() => setContact(props.color)}>Contacts</Button></a>
-            <a href="/about"><Button style={{background: `${about}`}} onClick={() => setAbout(props.color)}>About Me</Button></a>
+            <a href="/"><Button style={{background: `${home}`}} onClick={() => setHome(props.color>
+            <a href="/project"><Button style={{background: `${project}`}} onClick={() => setProjec>
+            <a href="/art"><Button style={{background: `${art}`}} onClick={() => setProject(props.>
+            <a href="/contact"><Button style={{background: `${contact}`}} onClick={() => setContac>
+            <a href="/about"><Button style={{background: `${about}`}} onClick={() => setAbout(prop>
         </div>
     )
 }
 
 export default Navigation;
+
