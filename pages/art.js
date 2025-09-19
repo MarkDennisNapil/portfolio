@@ -3,9 +3,6 @@ import Planets from "../components/planets"
 import Navigation from "../components/navigation"
 import styles from "../styles/Art.module.css"
 
-
-const Arts = () => {
-
 const data = [
   {
     title: "Neon Tetras Art",
@@ -53,6 +50,7 @@ const data = [
     url: ""
   }
 ]
+const Arts = () => {
   return(
     <div className={styles.container}>
     <Planets />
@@ -65,7 +63,7 @@ const data = [
         {
           data.map((art, i) => {
             return(
-              <img src={`/${art.image}`} className={styles.artImage} onClick={`/${art.url}`} key={>
+              <img src={`/${art.image}`} className={styles.artImage} onClick={`/${art.url}`} key={i} />
             )
           })
         }
