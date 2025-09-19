@@ -5,6 +5,7 @@ import styles from '../styles/Navigation.module.css'
 const Navigation = (props) => {
     const [home, setHome] = useState('');
     const [project, setProject] = useState('');
+		const [art, setArt] = useState("");
     const [contact, setContact] = useState('');
     const [about, setAbout] = useState('');
     useEffect(() => {
