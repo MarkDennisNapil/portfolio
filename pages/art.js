@@ -71,3 +71,5 @@ const Arts = () => {
     </div>
   )
 }
+
+export default Arts;
