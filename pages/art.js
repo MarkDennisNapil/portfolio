@@ -61,9 +61,9 @@ const Art = () => {
       <Navigation active={"art"} color={`rgba(0, 255, 165, 1)`} />
       <div className={styles.artContainer}>
         {
-          data.map((art, i) => {
+          data.map((item, i) => {
             return(
-              <img src={`/${art.image}`} className={styles.artImage} onClick={`/${art.url}`} key={i} />
+              <img src={`/${item.image}`} className={styles.artImage} onClick={`/${item.url}`} key={i} />
             )
           })
         }
