@@ -1,0 +1,23 @@
+.container {
+ width: 100%;
+ margin-top: 65px;
+ min-width: 600px;
+ font-family: "Courier New", Courier, monospace;
+}
+
+.artContainer {
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 5px;
+ padding: 5px;
+}
+
+.artImage {
+ width: 300px;
+ height: 300px;
+ object-fit: cover;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
