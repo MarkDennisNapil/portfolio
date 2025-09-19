@@ -63,7 +63,7 @@ const Art = () => {
         {
           data.map((item, i) => {
             return(
-              <img src={`/${item.image}`} className={styles.artImage} onClick={() => window.open(`/${item.url}`, '_blank')} key={i} />
+              <img src={`/${item.image}`} className={styles.artImage} onClick={() => window.open(`/${item.image}`, '_blank')} key={i} />
             )
           })
         }
