@@ -50,7 +50,7 @@ const data = [
     url: ""
   }
 ]
-const Arts = () => {
+const Art = () => {
   return(
     <div className={styles.container}>
     <Planets />
@@ -72,4 +72,4 @@ const Arts = () => {
   )
 }
 
-export default Arts;
+export default Art
