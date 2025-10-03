@@ -4,6 +4,11 @@ import Navigation from "../components/navigation"
 import styles from "../styles/Art.module.css"
 
 const data = [
+	{
+		title: "Watermelon Sail",
+		image: "watermelonsail.jpg",
+		url: ""
+	},
   {
     title: "Neon Tetras Art",
     image: "neon_tetras.jpg",
