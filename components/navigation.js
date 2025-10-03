@@ -24,7 +24,7 @@ const Navigation = (props) => {
         else if(props.active === 'about') {
             setAbout(props.color)
         } else {
-            console.log(Date.toString())
+            console.log(Date.toString() + "")
         }
     }, [])
     return(
